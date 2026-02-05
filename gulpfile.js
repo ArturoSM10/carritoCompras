@@ -9,7 +9,7 @@ const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
 function css(done) {
-    src('./src/scss/app.scss', { sourcemaps: true})
+    src('./src/scss/style.scss', { sourcemaps: true})
         .pipe(sass({outputStyle: 'expanded'}))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest('./dist/css', {sourcemaps: '.'}));

@@ -1,0 +1,19 @@
+@use '../base/variables' as v;
+@use '../components/mixins' as m;
+
+footer {
+    padding: 5rem 0 0;
+    @include m.tablet {
+        display: flex;
+        gap: 5rem;
+    }
+}
+
+.menu-footer__element,
+.nosotros__element {
+    display: block;
+    color: v.$azul;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}

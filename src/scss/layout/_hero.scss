@@ -1,0 +1,74 @@
+@use '../base/variables' as v;
+@use '../components/mixins' as m;
+
+.avif .hero {
+    background-image: url('../img/hero.avif');
+}
+
+.noavif.webp .hero {
+    background-image: url('../img/hero.webp');
+}
+.noavif.nowebp .hero {
+    background-image: url('../img/hero.jpg');
+}
+
+.hero {
+    height: 35rem;
+    margin-top: 3rem;
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding:3rem;
+
+    &__contenedor {
+        max-width: 96rem;
+    }
+
+    &__titulo {
+        color: v.$blanco;
+        font-weight: 500;
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+    
+    &__p {
+        color: v.$blanco;
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+}
+
+.form {
+    .busqueda {
+        background-color: v.$blanco;
+        display: flex;
+        height: 5rem;
+        border-radius: 0.5rem;
+
+        @include m.tablet {
+            width: 48%;
+        }
+
+        &__input {
+            flex: 1;
+            height: 100%;
+            border: none;
+            border-radius: 0.5rem 0  0 0.5rem;
+            padding: 0 1rem;
+            outline: none;
+        }
+        
+        &__submit {
+            outline: none;
+            height: 100%;
+            flex-basis: 5rem;
+            background-image: url('../img/lupa.png');
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            background-position: 50% center;
+            border: none;
+        }
+    }
+
+}

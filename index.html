@@ -10,10 +10,315 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
 </head>
 <body>
+    <header class="header">
+        <h1 class="header__titulo">Pagina universidad cursos</h1>
+        <div class="menu menu__contenedor">
+            <picture>
+                <source srcset="./dist/img/logo.avif" type="image/avif">
+                <source srcset="./dist/img/logo.webp" type="image/webp">
+                <img class="menu__img" loading="lazy" decoding="async" src="./dist/img/logo.avif" alt="Logotipo de la pagina universidad">
+            </picture>
+            <div class="cart__cont">
+                <a href="#">
+                    <img class="menu__cart" loading="lazy" decoding="async" src="./dist/img/cart.png" alt="Logotipo del carrito">
+                </a>
+                <div class="cart">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
+                        </tbody>
+                    </table>
+                    <a href="#">Vaciar carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="hero__contenedor">
+                <h2 class="hero__titulo">Aprende algo nuevo</h2>
+                <p class="hero__p">Todos los curso a $15</p>
+    
+                <form class="form" action="post">
+                    <div class="busqueda">
+                        <input class="busqueda__input" type="text" placeholder="¿Qué te gustaría aprender?">
+                        <input class="busqueda__submit" type="submit" value="">
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+        <div class="barra">
+            <div class="barra__contenedor">
+                <div class="caracteristica">
+                    <img class="caracteristica__img" loading="lazy" decoding="async" src="./dist/img/icono1.png" alt="Icono caracteristica">
+                    <p class="caracteristica__p">20,000 Cursos en línea <br>Explora los temas más recientes</p>
+                </div>
+    
+                <div class="caracteristica">
+                    <img class="caracteristica__img" loading="lazy" decoding="async" src="./dist/img/icono2.png" alt="Icono caracteristica">
+                    <p class="caracteristica__p">Instructores Expertos <br>Aprende con distintos estilos</p>
+                </div>
+    
+                <div class="caracteristica">
+                    <img class="caracteristica__img loading="lazy" decoding="async" src="./dist/img/icono3.png" alt="Icono caracteristica">
+                    <p class="caracteristica__p">Acceso de por vida <br>Aprende a tu ritmo</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="cursos">
+        <h2 class="cursos__title">Cursos en línea</h2>
+        <section class="cursos__contenedor cursos__grid">
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso1.avif" type="image/avif">
+                    <source srcset="./dist/img/curso1.wepb" type="image/webp">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso1.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">HTML5, CSS3, JavaScript para Principiantes</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso2.avif" type="image/avif">
+                    <source srcset="./dist/img/curso2.webp" type="image/wepb">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso2.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">Curso de Comida Vegetariana</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso3.avif" type="image/avif">
+                    <source srcset="./dist/img/curso3.avif" type="image/webp">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso3.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">Guitarra para Principiantes</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso4.avif" type="image/avif">
+                    <source srcset="./dist/img/curso4.webp" type="image/wepb">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso4.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">Huerto en tu casa</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso5.avif" type="image/avif">
+                    <source srcset="./dist/img/curso5.webp" type="image/wepb">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso5.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">Decoración con productos de tu hogar</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso1.avif" type="image/avif">
+                    <source srcset="./dist/img/curso1.webp" type="image/webp">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso1.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">Diseño Web para Principiantes</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso2.avif" type="image/avif">
+                    <source srcset="./dist/img/curso2.webp" type="image/webp">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso2.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">Comida Mexicana para principiantes</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso3.avif" type="image/avif">
+                    <source srcset="./dist/img/curso3.webp" type="image/webp">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso3.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">Estudio Musical en tu casa</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso4.avif" type="image/avif">
+                    <source srcset="./dist/img/curso4.webp" type="image/webp">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso4.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">Cosecha tus propias frutas y verduras</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso5.avif" type="image/avif">
+                    <source srcset="./dist/img/curso5.webp" type="image/webp">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso5.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">Prepara galletas caseras</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso1.avif" type="image/avif">
+                    <source srcset="./dist/img/curso1.webp" type="image/webp">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso1.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">JavaScript Moderno con ES6</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="./dist/img/curso2.avif" type="image/avif">
+                    <source srcset="./dist/img/curso2.webp" type="image/webp">
+                    <img class="card__img" loading="lazy" decoding="async" src="./dist/img/curso2.jpg" alt="Imagen del curso">
+                </picture>
+                <div class="card__info">
+                    <h3 class="card__title">100 Recetas de Comida Natural</h3>
+                    <p class="card__instructor">Juan Pedro</p>
+                    <img class="card__calificacion" loading="lazy" decoding="async" src="./dist/img/estrellas.png" alt="Calificacion curso">
+                    <div class="descuento">
+                        <p class="descuento__p descuento__p--dashed">$200</p>
+                        <p class="descuento__p">$15</p>
+                    </div>
+                    <a class="card__btn" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer__contenedor">
+        <nav class="menu-footer">
+            <ul>
+                <li><a class="menu-footer__element" href="#">Para tu negocio</a></li>
+                <li><a class="menu-footer__element" href="#">Conviertete en instructor</a></li>
+                <li><a class="menu-footer__element" href="#">Aplicaicones móviles</a></li>
+                <li><a class="menu-footer__element" href="#">Soporte</a></li>
+                <li><a class="menu-footer__element" href="#">Temas</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nosotros">
+            <ul>
+                <li><a class="nosotros__element" href="#">¿Quíenes somos</a></li>
+                <li><a class="nosotros__element" href="#">Empleo</a></li>
+                <li><a class="nosotros__element" href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </footer>
     <script src="./dist/js/imagenes.js"></script>
 </body>
 </html>

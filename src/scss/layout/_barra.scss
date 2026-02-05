@@ -1,0 +1,47 @@
+@use '../base/variables' as v;
+@use '../components/mixins' as m;
+
+.barra {
+    background-image: linear-gradient(to right, v.$degradadoOscuro, v.$degradadoClaro);
+    padding: 2rem 0;
+    
+    &__contenedor {
+        width: 90%;
+        max-width: 96rem;
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        }
+        @include m.desktop {
+            gap: 3rem;
+        }
+    }
+    .caracteristica {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+
+        &__img {
+            flex-basis: 10%;
+            object-fit: scale-down;
+            height: 3.5rem;
+            width: 100%;
+
+            @include m.tablet {
+                flex-basis: 15%;
+            }
+        }
+
+        &__p {
+            flex: 1;
+            text-align: center;
+            color: v.$blanco;
+            margin: 0;
+            line-height: 1.5;
+        }
+    }
+}
